@@ -6,18 +6,35 @@ In this challenge, you will be creating a number guessing game! Start by spendin
 
 ## Base Mode
 
-You should generate a random number between 1 and 25. Store the number in a variable but don't display it on the DOM! Add input fields to match the number of people in your group. Each member of your group will submit a guess at the same time. Check each guess against the random number. After submitting a round of guesses, let each user know whether their guess was correct, too low or too high. 
+You should generate a random number between 1 and 25. Store the number in a variable but don't display it on the DOM! Add input fields to match the number of people in your group. Each member of your group will submit a guess at the same time. Check each guess against the random number. After submitting a round of guesses, let each user know whether their guess was correct, too low or too high.
 
-- an input field for each of the Players to make a guess
-- a submit guesses button (submits all guesses at the same time)
-- total guesses made indicator (think of this as rounds in a game)
-- details area for the history of guesses for each player (tell them if their last guess was too low or too high)
-- if a guess is correct PROMINENTLY Display which player won (make 'em FEEL it)
-- if there is a winner, a restart button that selects a new random number
+- [ ] an input field for each of the Players to make a guess (CLIENT)
+- [ ] a submit guesses button (submits all guesses at the same time) (CLIENT)
+- [ ] total guesses made indicator (think of this as rounds in a game) (SERVER) (CLIENT)
+- [ ] details area for the history of guesses for each player (tell them if their last guess was too low or too high) (SERVER / CLIENT)
+- [ ] if a guess is correct PROMINENTLY Display which player won (make 'em FEEL it) (CLIENT)
+- [ ] if there is a winner, a restart button that selects a new random number (SERVER / CLIENT)
+
+DEV NOTES:
+
+SERVER:
+- google random number generator, Need to be able to reset
+    - generate random number on server, is a global variable
+- check guesses against random number (LOGIC)
+    - comparison and surface result dialog/text
+- history of guesses (array?????)
+
+DOM / CLIENT
+- input fields for players
+- input fields submit at the same time
+- display results (DUMB)
+- display number of guesses
+- PROMINENTLY Display Correct guess, super stylish
+- make restart button
 
 ## Stretch Goals
 
-The list below is not in any order of priority. Before attempting any of these, commit your working base mode. Make sure each member of your group understands what you completed for base mode! 
+The list below is not in any order of priority. Before attempting any of these, commit your working base mode. Make sure each member of your group understands what you completed for base mode!
 
 - allow for users to generate a new game with a manual min/max random number range
 - disallow two users to submit the same guess at the same time
