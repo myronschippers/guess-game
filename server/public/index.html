@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Guess A Number!</title>  
+  <link rel="stylesheet" href="styles/styles.css">
+  <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+  <script defer src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+  <script defer src="scripts/client.js"></script>
+</head>
+<body>
+    <h1>Number Guesser Game!</h1>
+    <h2>Pick a number between 1 and 25</h2>
+    <div id="content">
+      <form id="inputForm" onsubmit="submitGuesses(event)">
+        <label id="player1label" for="player1">Player 1 Guess: </label>
+        <input id="player1" name="player1" type="number">
+        <span>Player 1 Last Guess: </span>
+        <span id="player1last">No guesses yet</span>
+        <br><br>
+        <label id="player2label" for="player2">Player 2 Guess:</label>
+        <input id="player2" name="player2" type="number">
+        <span>Player 2 Last Guess:</span>
+        <span id="player2last">No guesses yet</span>
+        <br><br>
+        <label id="player3label" for="player3">Player 3 Guess:</label>
+        <input id="player3" name="player3" type="number">
+        <span>Player 3 Last Guess:</span>
+        <span id="player3last">No guesses yet</span>
+        <br><br>
+        <input id="submissionsBtn" type="submit" value="Submit Guesses">
+      </form>
+
+      <div class="gameResults">
+        <br>
+       
+        <span>Total Guesses:</span>
+        <span id="totalGuesses">0</span>
+      </div>      
+    </div>
+    
+</body>
+</html>

@@ -1,0 +1,14 @@
+/* * {
+  border: 2px solid red;
+} 
+
+span {
+  background-color: black;
+  color: white;
+}
+*/
+
+.winner {
+  color: yellow;
+  background-color: green;
+}
