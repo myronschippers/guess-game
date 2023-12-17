@@ -7,10 +7,40 @@
     <title>Guess A Number!</title>
     <link rel="stylesheet" href="styles/styles.css" />
     <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
   </head>
   <body>
     <h1>YOUR GAME HERE!</h1>
-    <div id="content"></div>
+    <div id="content">
+      <!-- DISPLAY FORM -->
+      <p>FORM HERE</p>
+
+      <!-- RESULTS DISPLAYED -->
+      <table>
+        <thead>
+          <tr>
+            <th>Player</th>
+            <th>Guess</th>
+            <th>Results</th>
+            <th>Round</th>
+          </tr>
+        </thead>
+        <tbody id="playerResults">
+          <tr>
+            <td>Player 1</td>
+            <td>10</td>
+            <td>WORDS</td>
+            <td>1</td>
+          </tr>
+          <tr>
+            <td>Player 2</td>
+            <td>20</td>
+            <td>WORDS</td>
+            <td>1</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
     <script src="scripts/client.js"></script>
   </body>
 </html>

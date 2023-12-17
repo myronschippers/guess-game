@@ -24,8 +24,8 @@ function getRandomIntInclusive(min, max) {
 // storage for guesses
 let guesses = [
   // { guess: 0, result: ''}
-  { number: 1, result: 'Something' },
-  { number: 10, result: 'Something' },
+  { number: 1, result: 'Too High' },
+  { number: 10, result: 'WINNER!!!' },
 ];
 let roundCounter = 0;
 
