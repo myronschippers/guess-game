@@ -18,6 +18,7 @@ You should generate a random number between 1 and 25. Store the number in a vari
 DEV NOTES:
 
 SERVER:
+- run server******
 - google random number generator, Need to be able to reset
     - generate random number on server, is a global variable
 - check guesses against random number (LOGIC)
